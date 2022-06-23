@@ -1,16 +1,12 @@
-let input_name = document.getElementById('name')
 
-const Greeting = (username) => {
+let username = document.getElementById('name');
+let btn = document.getElementById('btn');
+let paragraph = document.getElementById('text');
 
-  btn.addEventListener('click', () => {
-    if (username.value !== '') {
-      document.getElementById('text').innerText = `Hello ${username.value} welcome to bootcamp`
-
-    } else {
-      alert("Your username should not be null")
-    }
+function Greeting(){
+  btn.addEventListener('click', ()=>{
+    paragraph.innerText = `Hello ${username.value} welocome bootcamp`
   })
-
 }
 
-Greeting(input_name);
+Greeting();
